@@ -1,4 +1,7 @@
-﻿using System;
+﻿//john.CS IS MOSTLY LIKE OTHER RANDOM RESPONSE COMMANDS, THIS COMMAND WAS USED TO PERFORM SOME BASIC XML TESTING
+//I HAVE YET TO DECIDE TO ADD THE FUNCTION TO ALL COMMANDS. FOR NOW IT REMAINS.
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Discord.Commands;
@@ -24,7 +27,6 @@ namespace gankbot5.Modules
             Random rnd = new Random();
 
             string johnMessage = rndJohn[rnd.Next(0, rndJohn.Count)];
-           // XMLWrite.WriteXML(commandName, clickAmount);
             XMLWrite.ReadThenWrite(commandName, clickAmount);
             XMLRead.ReadXML(commandName);
             int newAmount = XMLRead.commandAmountRead;

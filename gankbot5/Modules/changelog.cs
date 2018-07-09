@@ -15,6 +15,7 @@ namespace gankbot5.Modules
         {
             EmbedBuilder builder = new EmbedBuilder();
             builder.WithTitle("Changelog").WithDescription("What the fuck is different?").WithColor(Color.Purple);
+            builder.AddField("09 JULY 2018", "Porting complete");
             builder.AddField("08 JULY 2018", "Ported GankBot v1 from Node.JS to C#, now known as GankBot v2... I ain't done yet.");
 
             await ReplyAsync("", false, builder.Build());
